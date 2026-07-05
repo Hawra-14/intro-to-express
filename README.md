@@ -16,7 +16,14 @@
 - create a directory
 - create server file `touch server.js`
 - initialize a node project with `npm init -y`
-- install express and morgan `npm i express morgan` 
+- install express and morgan `npm i express morgan`
+
+### Add `node_modules` to `.gitignore`
+
+.gitignore
+```bash
+node_module
+```
 
 ### Write Server Boilerplate
 
