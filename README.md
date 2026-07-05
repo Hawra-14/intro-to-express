@@ -15,6 +15,7 @@
 
 - create a directory
 - create server file `touch server.js`
+- create a `.gitingore` file
 - initialize a node project with `npm init -y`
 - install express and morgan `npm i express morgan`
 
