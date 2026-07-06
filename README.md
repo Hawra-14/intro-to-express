@@ -71,3 +71,35 @@ app.get('/:userId', function(req, res){
 Navigate to `http://localhost:3000/2490`
 
 <img width="532" height="179" alt="Screenshot 2026-07-05 at 2 12 17 PM" src="https://github.com/user-attachments/assets/4a428ac3-5fdd-4917-ab90-38e9cd39fad3" />
+
+## Rendering EJS
+- Install ejs with `npm i ejs`
+- Create a `views` directory
+- Create an `.ejs` file like `home.ejs`
+- Add html boilerplate with `!`
+
+home.ejs
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>This is an ejs page! 🚀</h1>
+</body>
+</html>
+```
+
+- Render `ejs` page using a controller like this one:
+
+  ```
+  app.get('/', function(req, res){
+    res.render('home.ejs')
+  })
+  ```
+  <img width="371" height="248" alt="Screenshot 2026-07-06 124007" src="https://github.com/user-attachments/assets/33d2bbe3-004b-4d7e-99df-61c5b097f44b" />
+
+  
