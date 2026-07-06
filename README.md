@@ -102,4 +102,14 @@ home.ejs
   ```
   <img width="371" height="248" alt="Screenshot 2026-07-06 124007" src="https://github.com/user-attachments/assets/33d2bbe3-004b-4d7e-99df-61c5b097f44b" />
 
-  
+  ### EJS Syntax
+
+  To use JavaScript in an ejs file, I need a scriptlet tag:
+  ```
+  <% let user = 'hawra' %>
+  ```
+
+  To display JavaScript values from an ejs file, I need an output tag
+  ```
+  <%= user %> 
+  ```
