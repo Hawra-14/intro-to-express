@@ -148,3 +148,27 @@ home.ejs
 <a href="/<%= item.id %>"> <%= item.name %> </a>
 ```
 We should see the URL change in the browser.
+
+### Adding CSS & images with `public`
+
+- Create a folder called `public`
+- Create a folder called `stylesheets` inside of `public`
+- Create a file called `style.css` inside of `stylesheets`
+
+Configure our server to look inside of the `public` folder for static files:
+```
+// require the path from node at the top
+const path = require('path')
+
+// use static middleware with other middlware like morgan
+app.use(express.static(path.join(__dirname, "public")))
+```
+Link the stylesheet in the head of our `html` files (inside `nav` partial if we're using partials)
+```
+<link rel="stylesheet" href="/stylesheets/style.css">
+```
+
+### Images
+- Create an `images` folder inside of our `public` folder
+- Link to images like normal: `<img src="/images/family.jpg" alt="A happy family">`
+
